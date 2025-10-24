@@ -4,7 +4,7 @@ Este repositorio contiene la estructura propuesta y el código base para crear u
 
 ---
 
-## 2. Construir imágenes Docker (ejemplo):
+## 1. Construir imágenes Docker (ejemplo):
 
 ```bash
 docker build -t brazo_robotico:latest ./pybullet_arm
@@ -12,7 +12,7 @@ docker build -t pista_carreras:latest ./pista_carreras
 docker build -t juegos_digitales:latest ./juegos_digitales
 ```
 
-## 3. Ejecutar contenedor (PyBullet — sin GUI o con X forwarding):
+## 2. Ejecutar contenedor (PyBullet — sin GUI o con X forwarding):
 
 ```bash
 # Sin GUI (headless)
@@ -23,7 +23,7 @@ docker run --rm brazo_robotico:latest
 # docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix brazo_robotico:latest
 ```
 
-## 4. Ejecutar contenedor (Tkinter — necesita DISPLAY):
+## 3. Ejecutar contenedor (Tkinter — necesita DISPLAY):
 
 ```bash
 # Linux:
