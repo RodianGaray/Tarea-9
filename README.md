@@ -33,21 +33,6 @@ docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix pista_carre
 
 ---
 
-## Capturas
-
-(Agrega tus imágenes en `docs/` o en la sección de la wiki del repo)
-
-```
-```
-
-```
-
----
-
-```
-
----
-
 ## .gitignore
 
 ```
@@ -221,36 +206,17 @@ CMD ["python","JuegoDef.py"]
 ```
 
 ---
+## Capturas
 
-## docker-compose.yml (opcional)
+(Agrega tus imágenes en `docs/` o en la sección de la wiki del repo)
 
-```yaml
-version: '3.8'
-services:
-  brazo:
-    build: ./pybullet_arm
-    container_name: brazo_robotico
-    environment:
-      - DISPLAY=${DISPLAY}
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-  pista:
-    build: ./pista_carreras
-    container_name: pista_carreras
-    environment:
-      - DISPLAY=${DISPLAY}
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
+```
+```
+
 ```
 
 ---
 
-## Instrucciones rápidas (resumen)
-
-* Ajusta los archivos URDF o recursos gráficos según tus activos reales.
-* Añade tus capturas en `docs/` o en el README en GitHub.
-* Para GUI desde Docker en Windows/Mac es más complejo: usar X11 forwarding externo o soluciones como VcXsrv (Windows) o XQuartz (macOS).
+```
 
 ---
-
-¡Listo! Copia y pega cada archivo en su carpeta correspondiente y realiza `git init`, `git add .`, `git commit -m "Proyecto base Juegos Digitales"` y sube a GitHub.
