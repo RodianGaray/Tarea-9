@@ -210,13 +210,12 @@ CMD ["python","JuegoDef.py"]
 
 (Agrega tus imágenes en `docs/` o en la sección de la wiki del repo)
 
-```
-```
+![Tare-5](1.jpg)
+![Tare-5](1.jpg)
+![Tare-5](1.jpg)
+![Tare-5](1.jpg)
+![Tare-5](1.jpg)
+![Tare-5](1.jpg)
 
-```
-
----
-
-```
 
 ---
